@@ -1,0 +1,83 @@
+/* reset css*/
+* {
+	box-sizing: border-box;
+	font-family: $base-font-family;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+*:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	appearance: textfield;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	box-shadow: 0 0 0 1000px #fff inset;
+	-webkit-text-fill-color: #000;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	appearance: none;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	display: inline-block;
+}
+
+a:hover,
+.btn.focus {
+	box-shadow: none;
+	outline: 0;
+	text-decoration: none;
+}
+
+pre {
+	font-family: $base-font-family;
+	tab-size: 2;
+}

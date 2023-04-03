@@ -1,0 +1,11 @@
+@mixin badge-variant($bg) {
+	background-color: $bg;
+	color: color-yiq($bg);
+
+	@at-root a#{&} {
+		@include hover-focus {
+			background-color: darken($bg, 10%);
+			color: color-yiq($bg);
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "extends": ["stylelint-config-sass-guidelines", "stylelint-config-prettier"],
+  "rules": {
+    "max-nesting-depth" : 6,
+    "selector-no-qualifying-type" : null,
+    "selector-max-compound-selectors" : 6,
+    "declaration-property-value-disallowed-list" : {
+      "options" : ["none"]
+    },
+    "selector-max-id" : 6,
+    "selector-pseudo-element-no-unknown" : null
+  }
+}

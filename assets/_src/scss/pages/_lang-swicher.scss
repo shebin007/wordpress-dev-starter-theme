@@ -1,0 +1,168 @@
+.laguage-chooser{
+	position: relative;
+	@include mobile{
+		overflow: scroll;
+	}
+
+	&::before{
+		background-image: url("../../assets/images/Lobby 2.jpg");
+		content: "";
+		height: 100vh;
+		left: 0;
+		opacity: .1;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -2;
+		@include mobile{
+			bottom: 0;
+			height: 200%;
+		}
+	}
+
+	.lang-container {
+		align-items: center;
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		justify-content: space-between;
+		margin: auto;
+		max-width: 55%;
+		@include mobile{
+			flex-wrap: wrap;
+		}
+
+		.lang-box{
+			align-items: center;
+			border: 1px solid #cfcfcf;
+			border-radius: 500px;
+	
+			display: flex;
+			flex-direction: column;
+			height: 550px;
+			justify-content: center;
+			mask-image: url("../../assets/images/maskimage.svg");
+			mask-image: url("../../assets/images/maskimage.svg");
+			mask-size: 350px 550px;
+			mask-size: 350px 550px;
+            
+			max-width: 350px;
+			overflow: hidden;
+			padding: 10% 0;
+			width: 100%;
+			@include mobile{
+				height: 400px;
+				mask-size: 100% 400px;
+				mask-size: 100% 400px;
+				max-width: 100%;
+				padding: 40% 0;
+			}
+			// position: relative;
+			*{
+				z-index: 2;
+			}
+
+			.secondary-btn{
+				background-color: transparent;
+				color: #fff;
+				margin-bottom: 0%;
+			}
+
+			&::before {
+				background-image: url("../../assets/images/Lobby 2.jpg");
+				content: "";
+				height: 100vh;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100vw;
+				z-index: -1;
+                
+				@include mobile{
+					height: 200%;
+				}
+			}
+
+			&::after{
+				background-color: #000;
+				content: "";
+				height: 100vh;
+				height: 100%;
+				left: 0;
+				mix-blend-mode: darken;
+				opacity: 1;
+				opacity: .5;
+				position: absolute;
+				top: 0;
+				width: 100vw;
+				width: 100%;
+				z-index: -1;
+				z-index: 1;
+				@include mobile{
+					height: 200%;
+				}
+			}
+    
+		}
+
+		.main-logo{
+			margin-bottom: auto;
+
+			svg{
+				max-width: 140px;
+				@include mobile{
+					max-height: 80px;
+					max-width: 80px;   
+				}
+			}
+		}
+
+	}
+}
+
+.copy {
+	bottom: 50px;
+	color: #000;
+	font-size: .9rem;
+	font-weight: 500;
+	left: 45%;
+	position: absolute;
+	@include mobile{
+		bottom: 10px;
+		left: 25%;
+		text-align: center;
+	}
+}
+
+
+
+
+/* Inline #59 | https://www.sidra.org/ramadan-hours-2023 */
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+	#MainZone table {
+		display: flex;
+	}
+      
+	#MainZone tr {
+		border-bottom: 1px #cfcfcf solid;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	#MainZone td {
+		text-align: left;
+	}
+      
+      
+}
+
+

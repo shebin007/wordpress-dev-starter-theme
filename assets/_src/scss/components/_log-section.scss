@@ -1,0 +1,25 @@
+.logo-para-container{
+	padding-left:70px ;
+	position: relative;
+	@include mobile{
+		padding-left: 40px;
+	}
+
+	&::before{
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.121' height='34.121' viewBox='0 0 34.121 34.121'%3E%3Cg id='Group_6510' data-name='Group 6510' transform='translate(0 0)'%3E%3Cpath id='Path_19' data-name='Path 19' d='M175.794,38.318H153.047V26.944H164.42V15.571h11.374V4.2h11.374V26.944H175.794Z' transform='translate(-153.047 -4.197)' fill='%23cdc3b9'/%3E%3Crect id='Rectangle_16' data-name='Rectangle 16' width='11.114' height='11.441' transform='translate(0.126)' fill='%23cdc3b9'/%3E%3C/g%3E%3C/svg%3E%0A");
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		height: 34px;
+		left: 0;
+		position : absolute;
+		top: 5px;
+		width: 34px;
+		@include mobile{
+			height: 20px;
+			top: 2px;
+			width: 20px;
+		}
+	}
+   
+}

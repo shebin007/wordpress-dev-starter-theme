@@ -1,0 +1,61 @@
+@import "../helpers/variables";
+@import "../helpers/responsive";
+
+.para{
+	color: #1B2B37;
+	font-size: 1.4rem;
+	font-weight: 300;
+	text-align: center;
+	@include mobile{
+		font-size: .9rem;
+	}
+}
+
+.p1{
+	color:#8D8D8D ;
+
+	font-size: 1.1rem;
+	font-weight: 300;
+	margin-bottom: 5.5em;
+       
+	position: relative;
+       
+	@include mobile{
+		font-size: .9rem;
+		margin-bottom: 1em;
+	}
+}
+
+.section-title{
+	font-size: 3.3rem;
+	font-weight: 300;
+	margin-bottom: 4%;
+	text-align: center;
+	text-transform: uppercase;
+	@include mobile{
+		font-size: 1.5rem;
+	}
+   
+	span {
+		color : #34393A;
+		display: block;
+		transition: translate linear .6s;
+		translate: -5%;
+	}
+
+	.gold {
+		color: #997F54;
+		translate: 10%;
+	}
+}
+
+.active.section-title{
+	span {
+		translate: 0%;
+	}
+
+	.gold {
+		translate: 0%;
+	}
+}
+

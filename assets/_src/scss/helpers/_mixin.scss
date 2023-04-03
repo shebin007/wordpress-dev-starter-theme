@@ -1,0 +1,30 @@
+// placeholder
+@mixin placeholder {
+	&::input-placeholder {
+		@content;
+	}
+
+	&:placeholder {
+		@content;
+	}
+
+	&::placeholder {
+		@content;
+	}
+
+	&:input-placeholder {
+		@content;
+	}
+}
+
+@keyframes pulse {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	to {
+		opacity: 0.8;
+		transform: scale(3, 3);
+	}
+}

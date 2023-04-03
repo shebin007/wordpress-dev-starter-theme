@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// Configuration and helpers
+@import "helpers/variables", "helpers/mixin", "helpers/responsive", "helpers/bootstrap-reset";
+
+// Vendors
+@import "vendor/bootstrap/scss/bootstrap";
+
+// Base stuff
+@import "base/base", "base/typography";
+
+// Layout-related sections
+@import "layout/header","layout/footer";
+
+// Components
+@import "components/buttons","components/modern-section",
+	"components/log-section";
+
+
+// Pages specific
+@import "pages/home","pages/lang-swicher";

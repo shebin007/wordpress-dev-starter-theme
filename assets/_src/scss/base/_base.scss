@@ -1,0 +1,30 @@
+/* reset */
+@import 'reset';
+
+* {
+	font-family: $base-font-family;
+}
+
+html {
+	font-family: $base-font-family;
+}
+
+body{
+	background-color: #F6F6F6;
+	overflow-x: hidden;
+}
+
+// gutter change for row & col
+.row {
+	@include tablet {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+
+	[class*='col'] {
+		@include tablet {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+	}
+}
