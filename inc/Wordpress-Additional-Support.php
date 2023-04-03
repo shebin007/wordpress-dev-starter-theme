@@ -49,28 +49,28 @@ add_filter( 'upload_mimes', function() {
  * 
  */
 
-class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
-    function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
-        $classes = empty( $item->classes ) ? array() : (array) $item->classes;
-        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter( $classes ), $item ) );
-        $class_names .= in_array('menu-item-has-children', $item->classes) ? ' has-sub-menu' : '';
+// class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
+//     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+//         $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+//         $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter( $classes ), $item ) );
+//         $class_names .= in_array('menu-item-has-children', $item->classes) ? ' has-sub-menu' : '';
 
-        $menu_icon = get_field('menu_icon', $item->ID);
+//         $menu_icon = get_field('menu_icon', $item->ID);
 
-        if ( $menu_icon  ) {
-            $class_names .= ' icon';
-        }
+//         if ( $menu_icon  ) {
+//             $class_names .= ' icon';
+//         }
 
-        $output .= '<li class="' . esc_attr( $class_names ) . '">';
-        $output .= '<a href="' . esc_attr( $item->url ) . '"><div class="footer-menu-img" style="background-image:url('.$menu_icon.')"></div>' . esc_html( $item->title ) . '</a>';
+//         $output .= '<li class="' . esc_attr( $class_names ) . '">';
+//         $output .= '<a href="' . esc_attr( $item->url ) . '"><div class="footer-menu-img" style="background-image:url('.$menu_icon.')"></div>' . esc_html( $item->title ) . '</a>';
 
-       return $output;
-    }
-}
+//        return $output;
+//     }
+// }
 
-function add_custom_walker_to_menu( $args ) {
-    $args['walker'] = new Custom_Walker_Nav_Menu();
-    return $args;
-}
+// function add_custom_walker_to_menu( $args ) {
+//     $args['walker'] = new Custom_Walker_Nav_Menu();
+//     return $args;
+// }
 
-add_filter( 'wp_nav_menu_args', 'add_custom_walker_to_menu' );
+// add_filter( 'wp_nav_menu_args', 'add_custom_walker_to_menu' );

@@ -16,9 +16,7 @@ print_r(get_theme_mod('sanad_top_button_1'));
     <div class="container">
         <div class="main-logo-container">
           <div class="main-logo">
-              <?= 
-                  the_custom_logo()
-              ?>
+             
               <a href="<?= site_url() ?>" class="custom-logo-link" rel="home" aria-current="page">
                   <img src="<?=  get_theme_mod('sanad_logo'	 ) ?>" class="scroll-logo" />
               </a>
